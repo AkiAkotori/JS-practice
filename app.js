@@ -1,8 +1,22 @@
-let someString = '10, 90, 23, 2'.split(', ');
-let result = 0;
+const numberOfFilms = +prompt('Сколько фильмов ты уже посмотрел?', '');
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {
 
-for (let i = 0; i < someString.length; i++) {
-    result += +someString[i];
-}
+    },
+    actors: {
 
-console.log(result);
+    },
+    genres: [],
+    privat: false
+};
+
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оцените его?', '');
+      
+personalMovieDB['movies'][a] = b;
+personalMovieDB['movies'][c] = d;
+
+console.log(personalMovieDB);
