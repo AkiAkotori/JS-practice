@@ -1,3 +1,5 @@
+"use strict";
+
 const numberOfFilms = +prompt('Сколько фильмов ты уже посмотрел?', '');
 const personalMovieDB = {
     count: numberOfFilms,
